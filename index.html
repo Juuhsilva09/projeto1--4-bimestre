@@ -55,14 +55,47 @@
        <!--slider main container-->
        <div class="swiper">
         <!--Addition required wrapper-->
+        <!--If we need pagination-->
+        <div class="swiper-pagination"></div>
+
         <div class="swiper-wrapper">
           <!--slides-->
-          <div class="swiper-slide"Slide 1></div>
+          <div class="swiper-slide"><img scr="img/Apachekafka.svg" alt="Livro sobre apache kafka a spring boot da alura books"></div>
+          <div class="swiper-slide"><img scr="img/Liderança.svg" alt="Livro sobre liderança em design da alura books"></div>
+          <div class="swiper-slide"><img scr="img/javascript.svg" alt="Livro sobre javascript assertivo da alurabooks"></div>
+          <div class="swiper-slide"><img scr="img/Guia Front-end.svg" alt="Livro guia front end"></div>
+          <div class="swiper-slide"><img scr="img/Portugol.svg" alt="Livro sobre portugol"></div>
+          <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+          ...
+        
+          </div>
+        
+          <!--If we need navigation buttos-->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+         </div> 
+
+         <div class="card">
+            <div class="card--descrição">
+               <div class="descrição">
+                <h3 class="descrição--titulo"> Talvez voce tambem se interesse por...</h3>
+               </div>
+            </div>
+         </div>
        </section>    
 
   <script src="https://unpkg.com/swiper-bundle.min.js"></script>
-
-  </body>
+  <script>
+    const swiper = new swiper('.swiper',{
+          spaceBetween: 10,
+          slidesPerView: 3,
+          pagination:{
+            el: '.swiper-pagination',
+            type:'bullets',
+          },
+    });
+ </script>
+</body>
 
 </html>
     
